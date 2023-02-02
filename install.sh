@@ -2,12 +2,12 @@
 
 # Check the llvm version
 clang_version=`clang --version | grep version`
-if [[ ${clang_version} != *"12.0.0"* ]];then
+if [[ ${clang_version} != *"12.0"* ]];then
     echo "Please use clang 12.0.0"
     exit 1
 fi
 llvm_version=`llvm-config --version`
-if [[ ${llvm_version} != *"12.0.0"* ]];then
+if [[ ${llvm_version} != *"12.0"* ]];then
     echo "Please use llvm 12.0.0"
     exit 1
 fi
